@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemIconTint="@color/colorPrimary"
+        app:menu="@menu/navigation" />
+
+
+    <ScrollView
+        android:layout_width="418dp"
+        android:layout_height="492dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:id="@+id/TableLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:isScrollContainer="true">
+
+            <TextView
+                android:text="@string/A_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/B_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/C_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/D_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/Lunch"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/E_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/F_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/F_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/G_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+            <TextView
+                android:text="@string/X_Block"
+                android:padding="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/border_rec"
+                />
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
