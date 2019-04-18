@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentClass">
+
+        <TableLayout
+            android:id="@+id/TableLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/morningblock"
+                android:layout_width="390dp"
+                android:background="@drawable/border_rec"
+                android:padding="15dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block1"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block1_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block2"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block2_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block3"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block3_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block4"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block4_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block5"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block5_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block6"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block6_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block7"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block7_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block8"
+                android:padding="30dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/block8_lab"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:background="@drawable/border_rec"
+                android:id="@+id/activities"
+                android:padding="15dp"
+                android:visibility="gone"
+                android:textAlignment="center"
+                />
+
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border_rec"
+        android:text="@string/Current_Class"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/CurrentClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/CurrentClass"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@drawable/border_rec"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/title_settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+
+</android.support.constraint.ConstraintLayout>
