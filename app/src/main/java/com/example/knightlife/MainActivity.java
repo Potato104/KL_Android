@@ -15,6 +15,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.Calendar;
 import java.util.Date;
 
@@ -80,28 +82,49 @@ public class MainActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         int day = calendar.get(Calendar.DAY_OF_WEEK);
 
-        final TextView Block1 = findViewById(R.id.block1);
-        final TextView Block2 = findViewById(R.id.block2);
-        final TextView Block3 = findViewById(R.id.block3);
-        final TextView Block4 = findViewById(R.id.block4);
-        final TextView Block5 = findViewById(R.id.block5);
-        final TextView Block6 = findViewById(R.id.block6);
-        final TextView Block7 = findViewById(R.id.block7);
-        final TextView Block8 = findViewById(R.id.block8);
-        final TextView Block1lab = findViewById(R.id.block1_lab);
-        final TextView Block2lab = findViewById(R.id.block2_lab);
-        final TextView Block3lab = findViewById(R.id.block3_lab);
-        final TextView Block4lab = findViewById(R.id.block4_lab);
-        final TextView Block5lab = findViewById(R.id.block5_lab);
-        final TextView Block6lab = findViewById(R.id.block6_lab);
-        final TextView Block7lab = findViewById(R.id.block7_lab);
-        final TextView Block8lab = findViewById(R.id.block8_lab);
-        final TextView Morning = findViewById(R.id.morningblock);
-        final TextView Activities = findViewById(R.id.activities);
+//        final TextView Block1 = findViewById(R.id.block1);
+//        final TextView Block2 = findViewById(R.id.block2);
+//        final TextView Block3 = findViewById(R.id.block3);
+//        final TextView Block4 = findViewById(R.id.block4);
+//        final TextView Block5 = findViewById(R.id.block5);
+//        final TextView Block6 = findViewById(R.id.block6);
+//        final TextView Block7 = findViewById(R.id.block7);
+//        final TextView Block8 = findViewById(R.id.block8);
+//        final TextView Block1lab = findViewById(R.id.block1_lab);
+//        final TextView Block2lab = findViewById(R.id.block2_lab);
+//        final TextView Block3lab = findViewById(R.id.block3_lab);
+//        final TextView Block4lab = findViewById(R.id.block4_lab);
+//        final TextView Block5lab = findViewById(R.id.block5_lab);
+//        final TextView Block6lab = findViewById(R.id.block6_lab);
+//        final TextView Block7lab = findViewById(R.id.block7_lab);
+//        final TextView Block8lab = findViewById(R.id.block8_lab);
+//        final TextView Morning = findViewById(R.id.morningblock);
+//        final TextView Activities = findViewById(R.id.activities);
         final TextView Block = findViewById(R.id.Block);
+        final TextView Coursename = findViewById(R.id.Coursename);
+        final TextView Start_Time = findViewById(R.id.Start_Time);
+        final TextView End_Time = findViewById(R.id.End_Time);
+        final TextView Location = findViewById(R.id.Location);
+
+        final TextView Block_Current = findViewById(R.id.block_current);
+        final TextView Coursename_Current = findViewById(R.id.coursename_current);
+        final TextView Start_Time_Current = findViewById(R.id.start_Time_current);
+        final TextView End_Time_Current = findViewById(R.id.end_Time_current);
+        final TextView Location_Current = findViewById(R.id.location_current);
 
 
-        Block.setText(R.string.Thursday);
+        Block.setText(R.string.E_Block);
+        Coursename.setText(R.string.test_course);
+        Start_Time.setText("10:00");
+        End_Time.setText("10:50");
+        Location.setText("389");
+
+        Block_Current.setText(R.string.G_Block);
+        Coursename_Current.setText(R.string.english);
+        Start_Time_Current.setText("9:10");
+        End_Time_Current.setText("9:55");
+        Location_Current.setText("235");
+
 
 
 //        switch (day) {
@@ -182,11 +205,11 @@ public class MainActivity extends AppCompatActivity {
 //                Block8.setText(R.string.X_Block);
 //                Morning.setText(R.string.Friday);
 //                break;
-
+//
 //        }
 
 
-        mTextMessage = (TextView) findViewById(R.id.message);
+        mTextMessage = findViewById(R.id.message);
     }
 
 }
